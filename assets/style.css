@@ -6,6 +6,11 @@
 body {
     margin: 0;
     font-family: 'Roboto Slab', serif;
+    color: var(--white-text);
+}
+
+section {
+    padding: 2% 0;
 }
 
 header {
@@ -37,3 +42,12 @@ header a {
     padding: 0 2% 2% 2%;
     font-size: 20px;
 }
+
+hr {
+    height: 0;
+    width: 33%;
+    border-style: dotted;
+    border-width: 10px;
+    color: var(--white-text);
+    border-bottom: hidden;
+    }
