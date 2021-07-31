@@ -21,8 +21,6 @@ section {
 }
 
 header {
-    position: sticky;
-    top: 0;
     width: 100%;
     text-align: center;
     padding-bottom: 2%;
@@ -31,20 +29,27 @@ header {
 }
 
 header h1 {
-    margin: 0;
-    padding: 3% 0;
+    padding: 2% 0;
     color: var(--white-text);
-    font-size: 3em
+    font-size: 4em
 }
 
+/* added this in as I believe there is a default 40px padding for ul that was causing the list to not be aligned in the center */
 header ul {
     padding-left: 0;
 }
 
+/* making the list go from left to right and removing the bullets */
 header li {
     display: inline;
     list-style-type: none;
     margin-bottom: 1%;
+}
+
+header li:hover, header a:hover {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(143, 17, 143);
 }
 
 header a {
@@ -54,6 +59,7 @@ header a {
     font-size: 20px;
 }
 
+/* creating a separator between different sections */
 hr {
     height: 0;
     width: 33%;
@@ -65,4 +71,9 @@ hr {
 
     section img {
         padding: 15px 30px;
+        filter: grayscale(100%);
+        border-radius: 15%;
+
+    section img:hover {
+        filter: grayscale(0%);
     }
