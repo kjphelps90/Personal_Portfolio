@@ -11,15 +11,22 @@ body {
 
 section {
     padding: 2% 0;
+    margin: 0 7%;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header {
-    display: sticky;
+    position: sticky;
     top: 0;
     width: 100%;
-    margin: 0;
     text-align: center;
     padding-bottom: 2%;
+    background-color: rgb(25, 144, 190);
     
 }
 
@@ -28,6 +35,10 @@ header h1 {
     padding: 3% 0;
     color: var(--white-text);
     font-size: 3em
+}
+
+header ul {
+    padding-left: 0;
 }
 
 header li {
@@ -50,4 +61,8 @@ hr {
     border-width: 10px;
     color: var(--white-text);
     border-bottom: hidden;
+    }
+
+    section img {
+        padding: 15px 30px;
     }
