@@ -1,0 +1,39 @@
+:root {
+ --white-text: rgba(255, 255, 255, 0.89);
+ background-color: rgb(25, 144, 190);
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    display: sticky;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2%;
+    
+}
+
+header h1 {
+    margin: 0;
+    padding: 3% 0;
+    color: var(--white-text);
+    font-size: 3em
+}
+
+header li {
+    display: inline;
+    list-style-type: none;
+    margin-bottom: 1%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white-text);
+    padding: 0 2% 2% 2%;
+    font-size: 20px;
+}
