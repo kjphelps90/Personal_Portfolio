@@ -34,9 +34,14 @@ header {
 }
 
 header h1 {
-    padding: 2% 0;
+    padding: 2% 0 0 0;
     color: var(--white-text);
-    font-size: 4em
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.selfImage {
+    border-radius: 50%;
 }
 
 /* added this in as I believe there is a default 40px padding for ul that was causing the list to not be aligned in the center */
