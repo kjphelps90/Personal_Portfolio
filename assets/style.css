@@ -1,6 +1,7 @@
 :root {
  --white-text: rgba(255, 255, 255, 0.89);
  background-color: rgb(25, 144, 190);
+ --link-color: rgb(143, 17, 143);
 }
 
 body {
@@ -14,6 +15,7 @@ section {
     margin: 0 7%;
 }
 
+/* created flexbox for the work section so the images will wrap down when the page becomes too small. */
 .flex-box {
     display: flex;
     flex-wrap: wrap;
@@ -46,10 +48,11 @@ header li {
     margin-bottom: 1%;
 }
 
+/* making links in header grow and change color when hovered over */
 header li:hover, header a:hover {
     font-size: 36px;
     font-weight: bold;
-    color: rgb(143, 17, 143);
+    color: var(--link-color);
 }
 
 header a {
@@ -69,11 +72,75 @@ hr {
     border-bottom: hidden;
     }
 
+    /* images under the work section will be grayed out until they are hovered over at which time the color will show*/
     section img {
         padding: 15px 30px;
         filter: grayscale(100%);
         border-radius: 15%;
+    }
 
     section img:hover {
         filter: grayscale(0%);
+    }
+
+    .blackHippy:hover::after, .blackHippy:focus::after {
+        content: "Black Hippy fanpage";  
+        background-color: #13293d;
+        color: var(--white-text);
+        width: fit-content;
+        position: absolute;
+        left: 40%;
+        font-size: 36px;
+        padding: 2% 1%;
+    }
+
+    .refractor:hover::after, .blackHippy:focus::after {
+        content: "Black Hippy fanpage";  
+        background-color: #13293d;
+        color: var(--white-text);
+        width: fit-content;
+        position: absolute;
+        left: 40%;
+        font-size: 24px;
+        padding: 2% 1%;
+    }
+
+    .prework:hover::after, .blackHippy:focus::after {
+        content: "Black Hippy fanpage";  
+        background-color: #13293d;
+        color: var(--white-text);
+        width: fit-content;
+        position: absolute;
+        left: 40%;
+        font-size: 24px;
+        padding: 2% 1%;
+    }
+
+    .ladingPage:hover::after, .blackHippy:focus::after {
+        content: "Black Hippy fanpage";  
+        background-color: #13293d;
+        color: var(--white-text);
+        width: fit-content;
+        position: absolute;
+        left: 40%;
+        font-size: 24px;
+        padding: 2% 1%;
+    }
+
+    .contact-list li {
+        list-style-type: none;
+        padding: 10px 0;
+    }
+
+    .contact-list a {
+        color: var(--white-text);
+    }
+
+    .contact-list a:hover {
+        font-size: 20px;
+        color: var(--link-color);
+    }
+
+    span {
+        font-size: 24px;
     }
