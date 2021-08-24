@@ -25,4 +25,4 @@ Version history
 Preview
 ------------
 
-![ScreenShot](./assets/site_screenshot.png)
+![ScreenShot](./assets/images/site_screenshot.png)
